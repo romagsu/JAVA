@@ -5,7 +5,8 @@ public class Product {
     private String name;
     private boolean stock;
     private int price;
-
+    
+    public Byn toByn; // method toBYN
 
     public Product (String name, boolean stock, int price){
         this.name = name;
@@ -43,7 +44,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return name + ";"+ stock + ";" + by.gsu.pmslab.Byn.toBYN(price);
+        return name + ";"+ stock + ";" + Byn.toBYN(price);
     }
 
 }
