@@ -47,19 +47,19 @@ public class Runner {
         System.out.println("\tProduct in stock = "+countStock(products));
     }
 
-    private static void show(Product[] array){
+    private static void show(Product[] array){ // method show
         for (Product item : array){
             System.out.println(item);
         }
     }
-    private static int countPrice(Product[] array){
+    private static int countPrice(Product[] array){ // method total cost
         int cents = 0;
         for (Product item : array){
             cents += item.getPrice();
         }
         return cents;
     }
-    private static int countStock(Product[] array){
+    private static int countStock(Product[] array){ // method product in stock
         int num = 0;
         for (Product item : array){
             if (item.isStock()){
