@@ -1,7 +1,7 @@
 package by.gsu.pmslab;
 
 public class Subject {
-    private final static String name = "wire";
+    private final static String NAME = "wire";
     private Material material;
     private double volume;
 
@@ -11,7 +11,7 @@ public class Subject {
     }
 
     public String getName() {
-        return name;
+        return NAME;
     }
 
     public Material getMaterial() {
@@ -35,6 +35,6 @@ public class Subject {
     }
 
     public String toString(){
-        return name + ";"+ material + ";" + volume + ";" + getMass();
+        return NAME + ";"+ material + ";" + volume + ";" + getMass();
     }
 }
